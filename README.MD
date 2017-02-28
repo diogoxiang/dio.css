@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/a233894432/dio.css/my_css_Framework">
-    <img width="128" alt="Diogo.css Logo" src="dio-logo.jpg"/>
+  <a href="https://github.com/a233894432/dio.css">
+    <img width="128" alt="dio.css Logo" src="dio-logo.jpg"/>
   </a>
 </p>
 
