@@ -10,6 +10,7 @@ const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-cssnano');
 const runSequence = require('run-sequence');
 const insert = require('gulp-insert');
+const uglify = require('gulp-uglify');
 const exec = require('child_process').exec;
 const pkg = require('./package.json');
 
@@ -98,3 +99,13 @@ gulp.task('clean:site_theme_mobi_css', () => {
 
 gulp.task('copy:site_theme_mobi_css', () => gulp.src(`${DIST_DIR}/*`)
     .pipe(gulp.dest(`${SITE_THEME_MOBI_CSS_DIR}/`)));
+
+
+gulp.task('compress', function() {
+    return gulp.src(`${SRC_DIR}/lib/*.js`)
+        .pipe(uglify())
+        .pipe(gulp.dest(DIST_DIR))
+        .on('error', function(err) {
+            console.error('Error in compress task', err.toString());
+        });
+});

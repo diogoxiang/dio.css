@@ -136,6 +136,30 @@
     }
 
 
+    /**
+     * 监听出错文件JS 
+     * 
+     * @param {any} errMsg 
+     * @param {any} scriptURI 
+     * @param {any} lineNumber 
+     * @param {any} columnNumber 
+     * @param {any} errorObj 
+     */
+    w.onerror = function(errMsg, scriptURI, lineNumber, columnNumber, errorObj) {
+        setTimeout(function() {
+            var rst = {
+                "错误信息：": errMsg,
+                "出错文件：": scriptURI,
+                "出错行号：": lineNumber,
+                "出错列号：": columnNumber,
+                "错误详情：": errorObj
+            };
+
+            console.log(JSON.stringify(rst, null, 10));
+        });
+    };
+
+
 
 
 }(jQuery, window, document));
