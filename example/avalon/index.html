@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BAM">
+    <title> </title>
+    <script src="../../src/lib/avalon.shim.js"></script>
+</head>
+
+<body>
+
+    <div ms-controller="vm">
+        {{name | filterNull}}
+    </div>
+
+
+    <script>
+        var vm = avalon.define({
+            $id: "vm",
+            name: "0"
+
+        })
+
+        avalon.filters.filterNull = function(str) { //用法： {{aaa|haha}}
+            if (str == null) {
+                return str + "哈哈"
+            } else {
+                return str
+            }
+        }
+    </script>
+</body>
+
+</html>

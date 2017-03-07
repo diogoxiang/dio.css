@@ -101,11 +101,9 @@ gulp.task('copy:site_theme_mobi_css', () => gulp.src(`${DIST_DIR}/*`)
     .pipe(gulp.dest(`${SITE_THEME_MOBI_CSS_DIR}/`)));
 
 
-gulp.task('compress', function() {
-    return gulp.src(`${SRC_DIR}/lib/*.js`)
-        .pipe(uglify())
-        .pipe(gulp.dest(DIST_DIR))
-        .on('error', function(err) {
-            console.error('Error in compress task', err.toString());
-        });
-});
+gulp.task('compress', () => gulp.src(`${SRC_DIR}/lib/*.js`)
+    .pipe(uglify())
+    .pipe(gulp.dest(DIST_DIR))
+    .on('error', function(err) {
+        console.error('Error in compress task', err.toString());
+    }))
