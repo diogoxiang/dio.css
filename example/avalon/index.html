@@ -12,13 +12,22 @@
 
     <div ms-controller="vm">
         {{name | filterNull}}
+
+
+
+        <select ms-duplex="selectModel">
+                <option value="" >aaa</option>
+                <option value="bbb" selected>bbb</option>
+                <option value="ccc">ccc</option>
+            </select> {{selectModel}}
     </div>
 
 
     <script>
         var vm = avalon.define({
             $id: "vm",
-            name: "0"
+            name: "0",
+            selectModel: ''
 
         })
 
