@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+</head>
+
+<body>
+
+
+
+    <script>
+        var myWorker = new Worker("mytask.js");
+        myWorker.onmessage = function(oEvent) {
+            console.log(oEvent)
+            console.log("Worker said : " + oEvent.data);
+        };
+
+        myWorker.postMessage("ali");
+    </script>
+
+
+</body>
+
+</html>
