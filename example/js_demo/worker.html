@@ -15,7 +15,7 @@
     <script>
         var myWorker = new Worker("mytask.js");
         myWorker.onmessage = function(oEvent) {
-            console.log(oEvent)
+
             console.log("Worker said : " + oEvent.data);
         };
 
