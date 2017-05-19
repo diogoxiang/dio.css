@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="css/dio.css" rel="stylesheet">-->
+    <script src="../../node_modules/bowl.js/lib/bowl.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        lll
+    </div>
+
+    <script>
+        var bowl = new Bowl()
+        bowl.add([{
+            url: 'dist/dio.min.css',
+            key: 'style'
+        }])
+        bowl.inject().then(() => {
+            // 你的代码
+            console.log(11)
+        })
+    </script>
+</body>
+
+</html>
