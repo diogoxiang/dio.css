@@ -8,3 +8,7 @@ $color-eee: #eee !default;
     background: $white;
     margin: 0 auto;
 }
+
+[v-cloak] {
+    display: none;
+}

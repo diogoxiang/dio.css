@@ -1,6 +1,6 @@
 {
     "name": "dio.css",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A minimalist CSS framework.Flexible css framework that focus on mobile.",
     "main": "dist/Diogo.css",
     "scripts": {
@@ -44,7 +44,11 @@
         "rimraf": "^2.5.4",
         "run-sequence": "^1.2.2"
     },
-    "dependencies": {
+    <<
+    << << < HEAD "dependencies": {
         "bowl.js": "^0.1.4"
-    }
+    } ===
+    === =
+    "dependencies": {} >>>
+    >>> > origin / master
 }

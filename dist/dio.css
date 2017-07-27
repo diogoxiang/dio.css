@@ -1,4 +1,4 @@
-/* dio.css v0.0.3 - http://github.com/a233894432 */
+/* dio.css v0.0.4 - http://github.com/a233894432 */
 .container {
   background-color: #fff;
   max-width: 740px;
@@ -341,5 +341,8 @@
 .dio-con {
   background: #fff;
   margin: 0 auto; }
+
+[v-cloak] {
+  display: none; }
 
 /*# sourceMappingURL=dio.css.map */
