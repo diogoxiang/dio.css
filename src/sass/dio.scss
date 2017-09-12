@@ -2,7 +2,7 @@
 //public base
 @import "public/variables",
 "public/mixin/mixin";
-// @import "base/resets",
+@import "base/resets";
 @import "base/layout",
 "base/flexbox",
 "base/table",

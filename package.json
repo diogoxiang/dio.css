@@ -44,11 +44,7 @@
         "rimraf": "^2.5.4",
         "run-sequence": "^1.2.2"
     },
-    <<
-    << << < HEAD "dependencies": {
+    "dependencies": {
         "bowl.js": "^0.1.4"
-    } ===
-    === =
-    "dependencies": {} >>>
-    >>> > origin / master
+    }
 }
